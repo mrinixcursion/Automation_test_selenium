@@ -35,7 +35,7 @@ def check_elem(url):
         print(f"no result: {e}")
 
 driver = webdriver.Chrome(executable_path="C:\Program Files (x86)\\chromedriver.exe")
-driver.get("https://cvcdev.adcuratio.net/login")
+driver.get("https://cvcdev.adcuratio.net/login") #provide your website url
 
 driver.find_element(By.ID, "email").send_keys("*********") #provide email
 driver.find_element(By.ID, "password").send_keys("*******") #provide password
